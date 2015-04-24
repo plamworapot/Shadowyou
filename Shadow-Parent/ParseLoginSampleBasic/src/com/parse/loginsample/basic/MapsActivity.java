@@ -19,8 +19,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -251,6 +255,30 @@ public class MapsActivity extends FragmentActivity  {
                 finish_date.setMaxDate(System.currentTimeMillis());
                 layout.addView(finish_date);
 
+                final Button listview = new Button(context);
+                listview.setText("Choose child to show");
+                layout.addView(listview);
+                listview.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PopupMenu popup = new PopupMenu(MapsActivity.this,listview);
+                        popup.getMenu().add("CHILD NAME1");
+                        popup.getMenu().add("CHILD NAME2");
+                        popup.getMenu().add("CHILD NAME3");
+                        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                            public boolean onMenuItemClick(MenuItem item) {
+                                Toast.makeText(
+                                        MapsActivity.this,
+                                        "You Clicked : " + item.getTitle(),
+                                        Toast.LENGTH_LONG
+                                ).show();
+                                listview.setText(item.getTitle().toString());
+                                return true;
+                            }
+                        });
+                        popup.show();
+                    }
+                });
                 builder.setView(layout);
                 builder.setPositiveButton("Save",
                         new DialogInterface.OnClickListener() {
@@ -261,10 +289,11 @@ public class MapsActivity extends FragmentActivity  {
                                 long d = new GregorianCalendar(
                                         finish_date.getYear(),finish_date.getMonth(),finish_date.getDayOfMonth()
                                 ).getTimeInMillis();
+                                String childname = listview.getText().toString();
                                 Intent intent = new Intent(MapsActivity.this,MapsHistoryActivity.class);
                                 intent.putExtra("start",c);
                                 intent.putExtra("finish",d);
-
+                                intent.putExtra("child_name",childname);
                                 startActivity(intent);
 
                             }
@@ -288,34 +317,35 @@ public class MapsActivity extends FragmentActivity  {
                 finish_date.init(mYear,mMonth,mDay,dateSetListener);
 
 //                start_date.init();
-                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
 
-//        textArea.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before,
-//                                      int count) {
-//            }
-//
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count,
-//                                          int after) {
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                // Check if edit text is empty
+        listview.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before,
+                                      int count) {
+                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count,
+                                          int after) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                // Check if edit text is empty
 //                if (TextUtils.isEmpty(s)) {
 //                    // Disable ok button
-//                    (dialog).getButton(
+//                    (Date_dialog).getButton(
 //                            AlertDialog.BUTTON_POSITIVE).setEnabled(false);
 //                } else {
 //                    // Something into edit text. Enable the button.
-//                    (dialog).getButton(
+//                    (Date_dialog).getButton(
 //                            AlertDialog.BUTTON_POSITIVE).setEnabled(true);
 //                }
-//
-//            }
-//        });
+
+            }
+        });
             }
         });
 
