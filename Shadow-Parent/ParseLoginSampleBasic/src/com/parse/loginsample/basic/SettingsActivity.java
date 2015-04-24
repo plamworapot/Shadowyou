@@ -2,6 +2,7 @@ package com.parse.loginsample.basic;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.media.Ringtone;
@@ -20,6 +21,9 @@ import android.preference.RingtonePreference;
 import android.text.TextUtils;
 import android.util.Log;
 
+
+import com.parse.ParseUser;
+import com.parse.ui.ParseLoginBuilder;
 
 import java.util.List;
 
@@ -49,6 +53,20 @@ public class SettingsActivity extends PreferenceActivity {
         super.onPostCreate(savedInstanceState);
 
         setupSimplePreferencesScreen();
+        Preference pf = (Preference)findPreference("logout_user");
+        pf.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                ParseUser.logOut();
+                Intent intent = new Intent(getApplicationContext(),SampleProfileActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                return true;
+            }
+        });
+
+
+
     }
 
     /**
@@ -75,9 +93,9 @@ public class SettingsActivity extends PreferenceActivity {
 
         // Add 'data and sync' preferences, and a corresponding header.
         fakeHeader = new PreferenceCategory(this);
-        fakeHeader.setTitle(R.string.pref_header_data_sync);
+        fakeHeader.setTitle(R.string.user_setting);
         getPreferenceScreen().addPreference(fakeHeader);
-        addPreferencesFromResource(R.xml.pref_data_sync);
+        addPreferencesFromResource(R.xml.pref_user_logout);
 
         // Bind the summaries of EditText/List/Dialog/Ringtone preferences to
         // their values. When their values change, their summaries are updated
@@ -85,7 +103,8 @@ public class SettingsActivity extends PreferenceActivity {
 //        bindPreferenceSummaryToValue(findPreference("example_text"));
 //        bindPreferenceSummaryToValue(findPreference("example_list"));
         bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
-        bindPreferenceSummaryToValue(findPreference("sync_frequency"));
+        bindPreferenceSummaryToValue(findPreference("logout_user"));
+
     }
 
     /**
@@ -137,7 +156,7 @@ public class SettingsActivity extends PreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
-
+            Log.i("value",stringValue);
             if (preference instanceof ListPreference) {
                 // For list preferences, look up the correct display value in
                 // the preference's 'entries' list.
@@ -176,6 +195,9 @@ public class SettingsActivity extends PreferenceActivity {
                 // For all other preferences, set the summary to the value's
                 // simple string representation.
                 preference.setSummary(stringValue);
+            }
+            if(value.equals("logout_user")){
+                Log.i("logout","hello");
             }
             return true;
         }

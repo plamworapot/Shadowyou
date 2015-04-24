@@ -52,17 +52,8 @@ public class AddChildActivity extends FragmentActivity {
         setContentView(R.layout.activity_add_child);
         childlist = (ListView)findViewById(R.id.child_list);
         childlist.setVisibility(View.INVISIBLE);
-        Button btn_add_child = (Button)findViewById(R.id.add_child);
         loadchild();
 
-
-
-        btn_add_child.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
     public void updatelist(){
         data = new ArrayList<Map<String, String>>();

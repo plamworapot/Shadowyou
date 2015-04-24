@@ -47,6 +47,15 @@
             android:paddingRight="10dp"
             android:id="@+id/button3" />
         <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="@string/history"
+            android:padding="10dp"
+            android:layout_marginTop="200dp"
+            android:paddingRight="10dp"
+            android:id="@+id/button_history" />
+        <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left|bottom"
@@ -66,6 +75,7 @@
             android:layout_marginRight="20dp"
             android:id="@+id/button_right"
             android:visibility="invisible" />
+
 
 
     </FrameLayout>

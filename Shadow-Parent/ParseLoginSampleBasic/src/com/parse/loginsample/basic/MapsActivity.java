@@ -17,8 +17,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -45,6 +47,8 @@ import com.parse.ParseUser;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Map;
 
@@ -65,6 +69,9 @@ public class MapsActivity extends FragmentActivity  {
     int i=0;
     boolean first_load = true;
     Gson g = new Gson();
+    DatePicker finish_date;
+    DatePicker start_date;
+    AlertDialog Date_dialog;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -75,6 +82,7 @@ public class MapsActivity extends FragmentActivity  {
         Button btn_select = (Button)findViewById(R.id.button2);
         Button btn_delete = (Button)findViewById(R.id.button3);
         Button btn_add = (Button)findViewById(R.id.button_add);
+        Button btn_history = (Button)findViewById(R.id.button_history);
         final Button btn_left = (Button)findViewById(R.id.button_left);
         final Button btn_right = (Button)findViewById(R.id.button_right);
 //      Parse.enableLocalDatastore(this);
@@ -215,8 +223,122 @@ public class MapsActivity extends FragmentActivity  {
                 selectchk =0;
             }
         });
+        btn_history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
+                Context context = MapsActivity.this;
+
+
+                builder.setTitle("Select Date ");
+
+                LinearLayout layout = new LinearLayout(context);
+                layout.setOrientation(LinearLayout.VERTICAL);
+
+                final TextView start_text = new TextView(context);
+                start_text.setText("Start Date");
+                layout.addView(start_text);
+
+                start_date = new DatePicker(context);
+                start_date.setMaxDate(System.currentTimeMillis());
+                layout.addView(start_date);
+
+                final TextView to_text = new TextView(context);
+                to_text.setText("to");
+                layout.addView(to_text);
+
+                finish_date = new DatePicker(context);
+                finish_date.setMaxDate(System.currentTimeMillis());
+                layout.addView(finish_date);
+
+                builder.setView(layout);
+                builder.setPositiveButton("Save",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                long c = new GregorianCalendar(
+                                        start_date.getYear(),start_date.getMonth(),start_date.getDayOfMonth()
+                                ).getTimeInMillis();
+                                long d = new GregorianCalendar(
+                                        finish_date.getYear(),finish_date.getMonth(),finish_date.getDayOfMonth()
+                                ).getTimeInMillis();
+                                Intent intent = new Intent(MapsActivity.this,MapsHistoryActivity.class);
+                                intent.putExtra("start",c);
+                                intent.putExtra("finish",d);
+
+                                startActivity(intent);
+
+                            }
+                        });
+                builder.setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                // DO TASK
+
+                            }
+                        });
+
+
+                Date_dialog = builder.create();
+                Date_dialog.show();
+                Calendar ca = Calendar.getInstance();
+                int mYear = ca.get(Calendar.YEAR);
+                int mMonth = ca.get(Calendar.MONTH);
+                int mDay = ca.get(Calendar.DAY_OF_MONTH);
+                start_date.init(mYear,mMonth,mDay,dateSetListener);
+                finish_date.init(mYear,mMonth,mDay,dateSetListener);
+
+//                start_date.init();
+                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+
+//        textArea.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before,
+//                                      int count) {
+//            }
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count,
+//                                          int after) {
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//                // Check if edit text is empty
+//                if (TextUtils.isEmpty(s)) {
+//                    // Disable ok button
+//                    (dialog).getButton(
+//                            AlertDialog.BUTTON_POSITIVE).setEnabled(false);
+//                } else {
+//                    // Something into edit text. Enable the button.
+//                    (dialog).getButton(
+//                            AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+//                }
+//
+//            }
+//        });
+            }
+        });
 
     }
+    private DatePicker.OnDateChangedListener dateSetListener = new DatePicker.OnDateChangedListener() {
+
+        public void onDateChanged(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+            long c = new GregorianCalendar(
+                    start_date.getYear(),start_date.getMonth(),start_date.getDayOfMonth()
+            ).getTimeInMillis();
+            long d = new GregorianCalendar(
+                    finish_date.getYear(),finish_date.getMonth(),finish_date.getDayOfMonth()
+            ).getTimeInMillis();
+            if(d>=c){
+                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+            }else{
+                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
+            }
+
+        }
+    };
+
     private void sendData() {
         Log.i("","senddata");
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Area");

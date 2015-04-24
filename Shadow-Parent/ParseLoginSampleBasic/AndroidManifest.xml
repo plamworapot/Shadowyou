@@ -136,8 +136,8 @@
             android:label="@string/title_activity_add_child" >
         </activity>
         <activity
-            android:name=".AddChildActivity1"
-            android:label="@string/title_activity_add_child_activity1" >
+            android:name=".MapsHistoryActivity"
+            android:label="@string/title_activity_maps_history" >
         </activity>
     </application>
 
