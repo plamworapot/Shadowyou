@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ParseAndroidUI.iml" filepath="$PROJECT_DIR$/ParseAndroidUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParseLoginSampleBasic/ParseLoginSampleBasic.iml" filepath="$PROJECT_DIR$/ParseLoginSampleBasic/ParseLoginSampleBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParseLoginUI/ParseLoginUI.iml" filepath="$PROJECT_DIR$/ParseLoginUI/ParseLoginUI.iml" />
+    </modules>
+  </component>
+</project>
+

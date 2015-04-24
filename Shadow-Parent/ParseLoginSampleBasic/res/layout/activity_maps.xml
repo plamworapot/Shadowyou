@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MapActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <FrameLayout
+        android:id="@+id/fram_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top">
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="Add polygon"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:paddingRight="10dp"
+            android:id="@+id/button_add" />
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="select polygon"
+            android:padding="10dp"
+            android:layout_marginTop="100dp"
+            android:paddingRight="10dp"
+            android:id="@+id/button2" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="remove select polygon"
+            android:padding="10dp"
+            android:layout_marginTop="150dp"
+            android:paddingRight="10dp"
+            android:id="@+id/button3" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="select left"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/button_left"
+            android:visibility="invisible" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="select right"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/button_right"
+            android:visibility="invisible" />
+
+
+    </FrameLayout>
+</FrameLayout>
