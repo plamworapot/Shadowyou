@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.0"
+  },
+  "applications": {
+    "_default": {
+      "link": "shadowyou"
+    },
+    "shadowyou": {
+      "applicationId": "BlDypkDXDLkGHQSor5PJBIY9y3LrI4U9F7W7Maxq",
+      "masterKey": "1ofyX4QK8iImvJ7JQBSCdy8escE66uHmNbj9KiLW"
+    }
+  }
+}
