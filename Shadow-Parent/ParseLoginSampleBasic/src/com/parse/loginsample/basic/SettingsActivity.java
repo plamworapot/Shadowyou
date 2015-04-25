@@ -23,7 +23,6 @@ import android.util.Log;
 
 
 import com.parse.ParseUser;
-import com.parse.ui.ParseLoginBuilder;
 
 import java.util.List;
 
@@ -61,6 +60,19 @@ public class SettingsActivity extends PreferenceActivity {
                 Intent intent = new Intent(getApplicationContext(),SampleProfileActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                return true;
+            }
+        });
+        final CheckBoxPreference pref = (CheckBoxPreference) findPreference("notifications_new_message");
+        pref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                boolean checked = Boolean.valueOf(newValue.toString());
+                if(checked == true){
+                    Log.i("checkbox","true");
+                }else{
+                    Log.i("checkbox","false");
+                }
                 return true;
             }
         });
@@ -102,8 +114,8 @@ public class SettingsActivity extends PreferenceActivity {
         // to reflect the new value, per the Android Design guidelines.
 //        bindPreferenceSummaryToValue(findPreference("example_text"));
 //        bindPreferenceSummaryToValue(findPreference("example_list"));
-        bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
-        bindPreferenceSummaryToValue(findPreference("logout_user"));
+//        bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
+//        bindPreferenceSummaryToValue(findPreference("logout_user"));
 
     }
 
@@ -156,7 +168,6 @@ public class SettingsActivity extends PreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
-            Log.i("value",stringValue);
             if (preference instanceof ListPreference) {
                 // For list preferences, look up the correct display value in
                 // the preference's 'entries' list.
@@ -190,14 +201,10 @@ public class SettingsActivity extends PreferenceActivity {
                         preference.setSummary(name);
                     }
                 }
-
             } else {
                 // For all other preferences, set the summary to the value's
                 // simple string representation.
                 preference.setSummary(stringValue);
-            }
-            if(value.equals("logout_user")){
-                Log.i("logout","hello");
             }
             return true;
         }

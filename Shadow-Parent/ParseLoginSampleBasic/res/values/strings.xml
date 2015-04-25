@@ -23,4 +23,5 @@
     <string name="user_setting">User Setting</string>
     <string name="title_activity_maps_history">Map</string>
     <string name="history">History</string>
+    <string name="notification_status">Send Notification</string>
 </resources>

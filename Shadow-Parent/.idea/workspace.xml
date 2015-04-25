@@ -18,7 +18,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="start" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="stringValue" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.parse.loginsample.basic" />
   </component>
   <component name="ChangeListManager">
@@ -44,49 +44,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="google_maps_api.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/debug/res/values/google_maps_api.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="408">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="google_maps_api.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/release/res/values/google_maps_api.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="408">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapsHistoryActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MapsHistoryActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsHistoryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5649547" vertical-offset="153" max-vertical-offset="1734">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1734">
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapsActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MapsActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3392" max-vertical-offset="9027">
-              <caret line="295" column="59" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="59" />
-              <folding>
-                <element signature="e#8652#14173#0" expanded="true" />
-                <element signature="e#9916#11006#0" expanded="true" />
-                <element signature="e#10347#10926#0" expanded="true" />
-                <element signature="e#10899#10900#0" expanded="true" />
-                <element signature="e#10987#10988#0" expanded="true" />
-                <element signature="e#14162#14163#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-3.1762917" vertical-offset="2575" max-vertical-offset="8942">
+              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,9 +67,14 @@
       <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="5015">
-              <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="38" />
-              <folding />
+            <state vertical-scroll-proportion="-3.4285715" vertical-offset="652" max-vertical-offset="4641">
+              <caret line="71" column="24" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="24" />
+              <folding>
+                <element signature="e#2638#3089#0" expanded="true" />
+                <element signature="e#3078#3079#0" expanded="true" />
+                <element signature="e#6436#8520#0" expanded="true" />
+                <element signature="e#8513#8514#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,6 +89,16 @@
           </provider>
           <provider selected="true" editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pref_notification.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_notification.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="561">
+              <caret line="24" column="42" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -1823,15 +1811,16 @@
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_add_child.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_user_logout.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/AddChildActivity.java" />
-        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml" />
         <option value="$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_app_logo.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/release/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/debug/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_maps.xml" />
-        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsHistoryActivity.java" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_notification.xml" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java" />
       </list>
     </option>
   </component>
@@ -1867,8 +1856,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1903,6 +1890,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1938,6 +1926,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1955,6 +1947,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="values" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParseUI-Android-master" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParseLoginSampleBasic" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2045,6 +2051,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2318,7 +2325,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2331,7 +2338,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38841566" sideWeight="0.5226929" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39182281" sideWeight="0.5226929" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2627,13 +2634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_notification.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_user_logout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
@@ -2738,14 +2738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="4454">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/release/res/values/google_maps_api.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="408">
@@ -2765,25 +2757,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsHistoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3392" max-vertical-offset="9027">
-          <caret line="295" column="59" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1734">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/xml/pref_notification.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="561">
+          <caret line="24" column="42" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4285715" vertical-offset="652" max-vertical-offset="4641">
+          <caret line="71" column="24" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="24" />
           <folding>
-            <element signature="e#8652#14173#0" expanded="true" />
-            <element signature="e#9916#11006#0" expanded="true" />
-            <element signature="e#10347#10926#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#10987#10988#0" expanded="true" />
-            <element signature="e#14162#14163#0" expanded="true" />
+            <element signature="e#2638#3089#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
+            <element signature="e#6436#8520#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsHistoryActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5649547" vertical-offset="153" max-vertical-offset="1734">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state vertical-scroll-proportion="-3.1762917" vertical-offset="2575" max-vertical-offset="8942">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
           <folding />
         </state>
       </provider>

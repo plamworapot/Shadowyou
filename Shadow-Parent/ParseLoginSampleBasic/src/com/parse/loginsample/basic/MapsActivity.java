@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.provider.Settings;
@@ -99,6 +100,9 @@ public class MapsActivity extends FragmentActivity  {
 //        installation.put("deviceId", android_id);
 //        installation.saveInBackground();
 
+
+
+
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Area");
         query.whereEqualTo("user", ParseUser.getCurrentUser());
         query.getFirstInBackground(new GetCallback<ParseObject>() {
@@ -152,7 +156,6 @@ public class MapsActivity extends FragmentActivity  {
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                Log.i("","chk============="+chk);
                 if(chk==0){
                     if (arrayPoints.get(0).equals(marker.getPosition())) {
                         countPolygonPoints();
@@ -583,6 +586,7 @@ public class MapsActivity extends FragmentActivity  {
         childlist.clear();
         first_load = false;
         redraw();
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
