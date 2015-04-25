@@ -16,4 +16,5 @@ public class ChildList {
         this.name = name;
         this.deviceId = deviceId;
     }
+
 }

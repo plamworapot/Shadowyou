@@ -79,6 +79,7 @@ public class MapsActivity extends FragmentActivity  {
     AlertDialog Date_dialog;
     int chk_t = 0;
     Button listview;
+    String select_deviceId = new String();
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -235,6 +236,9 @@ public class MapsActivity extends FragmentActivity  {
         btn_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final ArrayList<String> deviceId = new ArrayList<String>();
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
                 Context context = MapsActivity.this;
 
@@ -264,29 +268,49 @@ public class MapsActivity extends FragmentActivity  {
                 listview.setHint("Choose child to show");
                 listview.setText(null);
                 layout.addView(listview);
-                listview.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        PopupMenu popup = new PopupMenu(MapsActivity.this,listview);
-                        popup.getMenu().add("CHILD NAME1");
-                        popup.getMenu().add("CHILD NAME2");
-                        popup.getMenu().add("CHILD NAME3");
-                        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                            public boolean onMenuItemClick(MenuItem item) {
-                                Toast.makeText(
-                                        MapsActivity.this,
-                                        "You Clicked : " + item.getTitle(),
-                                        Toast.LENGTH_LONG
-                                ).show();
-                                listview.setText(item.getTitle().toString());
-                                return true;
-                            }
-                        });
-                        popup.show();
-                    }
-                });
+                    listview.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            final PopupMenu popup = new PopupMenu(MapsActivity.this,listview);
+                            ParseQuery<ParseObject> query = ParseQuery.getQuery("Parent_relation_child");
+                            query.whereEqualTo("user", ParseUser.getCurrentUser());
+                            query.findInBackground(new FindCallback<ParseObject>() {
+                                @Override
+                                public void done(List<ParseObject> rows, ParseException e) {
+                                    if (e == null && rows.size() > 0) {
+
+                                        for (ParseObject row : rows) {
+                                            ChildList temp = new ChildList(row.getString("name"),row.getString("deviceId"));
+                                            popup.getMenu().add(temp.name.toString());
+                                            deviceId.add(row.getParseObject("deviceId").getObjectId());
+                                        }
+                                        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                                            public boolean onMenuItemClick(MenuItem item) {
+                                                Toast.makeText(
+                                                        MapsActivity.this,
+                                                        "You Clicked : " + item.getTitle(),
+                                                        Toast.LENGTH_LONG
+                                                ).show();
+                                                if(item.getTitle() == "Please select child"){
+                                                    listview.setText("");
+                                                }else{
+                                                    listview.setText(item.getTitle().toString());
+                                                    select_deviceId = deviceId.get((item.getItemId()));
+                                                }
+                                                Log.i("temp",listview.getText().toString());
+                                                return true;
+                                            }
+                                        });
+                                        popup.show();
+                                    }
+                                }
+                            });
+
+
+                        }
+                    });
                 builder.setView(layout);
-                builder.setPositiveButton("Save",
+                builder.setPositiveButton("Open History",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface arg0, int arg1) {
                                 long c = new GregorianCalendar(
@@ -296,10 +320,12 @@ public class MapsActivity extends FragmentActivity  {
                                         finish_date.getYear(),finish_date.getMonth(),finish_date.getDayOfMonth()
                                 ).getTimeInMillis();
                                 String childname = listview.getText().toString();
+
                                 Intent intent = new Intent(MapsActivity.this,MapsHistoryActivity.class);
                                 intent.putExtra("start",c);
                                 intent.putExtra("finish",d);
                                 intent.putExtra("child_name",childname);
+                                intent.putExtra("deviceId",select_deviceId);
                                 startActivity(intent);
 
                             }
@@ -329,8 +355,11 @@ public class MapsActivity extends FragmentActivity  {
             @Override
             public void onTextChanged(CharSequence s, int start, int before,
                                       int count) {
-                Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
-                chk_t =1;
+
+
+                    Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+                    chk_t = 1;
+
             }
 
             @Override
@@ -357,6 +386,7 @@ public class MapsActivity extends FragmentActivity  {
         });
 
     }
+
     private DatePicker.OnDateChangedListener dateSetListener = new DatePicker.OnDateChangedListener() {
 
         public void onDateChanged(DatePicker view, int year, int monthOfYear,
@@ -422,6 +452,7 @@ public class MapsActivity extends FragmentActivity  {
                             ParseObject device = row.getParseObject("device");
                             ParseGeoPoint child_latlng = device.getParseGeoPoint("location");
                             int battery = device.getInt("level");
+
                             Boolean plugged = device.getBoolean("plugged");
                             String charge = plugged == true ? "(Charging)" : "" ;
                             LatLng childlatlng = new LatLng(child_latlng.getLatitude(),child_latlng.getLongitude());

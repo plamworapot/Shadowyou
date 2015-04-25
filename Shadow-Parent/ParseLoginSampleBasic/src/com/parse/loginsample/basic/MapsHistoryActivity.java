@@ -10,6 +10,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -21,12 +22,19 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.lang.reflect.Array;
+import java.security.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class MapsHistoryActivity extends FragmentActivity {
 
@@ -40,10 +48,17 @@ public class MapsHistoryActivity extends FragmentActivity {
         long start = getIntent().getExtras().getLong("start");
         long stop = getIntent().getExtras().getLong("finish");
         String child_name = getIntent().getExtras().getString("child_name");
+        String deviceId = getIntent().getExtras().getString("deviceId");
         String start_date = MillsToDate(start);
         String stop_date = MillsToDate(stop);
-        Log.i("starts",start_date);
-        Log.i("startf",stop_date);
+        Calendar cal = Calendar.getInstance();
+        cal.setTimeInMillis(start);
+        Date start_obj_date = cal.getTime();
+        Log.i("start_date",""+start_obj_date);
+        Log.i("start_id",""+deviceId);
+
+        Log.i("starts",""+start);
+        Log.i("startf",""+stop);
         Log.i("start_child",child_name);
         ArrayList<LatLng> line = new ArrayList<LatLng>();
         line.add(new LatLng(13.639199, 100.524985));
@@ -53,6 +68,7 @@ public class MapsHistoryActivity extends FragmentActivity {
         line.add(new LatLng(13.639429, 100.525049));
         Log.i("array_list",""+line.size());
         DrawPolyline(line);
+
 
     }
     public String MillsToDate(long mills){
@@ -75,6 +91,20 @@ public class MapsHistoryActivity extends FragmentActivity {
                 break;
             }
         }
+    }
+    public void getHistory(){
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("DeviceHistory");
+        query.whereEqualTo("deviceId", ParseUser.getCurrentUser());
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> rows, ParseException e) {
+                if (e == null && rows.size()>0) {
+
+                }else{
+
+                }
+            }
+        });
     }
     @Override
     protected void onResume() {
