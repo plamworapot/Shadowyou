@@ -22,7 +22,10 @@ import android.text.TextUtils;
 import android.util.Log;
 
 
+import com.parse.ParseException;
+import com.parse.ParseInstallation;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 import java.util.List;
 
@@ -64,15 +67,23 @@ public class SettingsActivity extends PreferenceActivity {
             }
         });
         final CheckBoxPreference pref = (CheckBoxPreference) findPreference("notifications_new_message");
+        ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+        pref.setChecked(!installation.getBoolean("not_recieve_noti"));
         pref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
+                ParseInstallation install = ParseInstallation.getCurrentInstallation();
+                pref.setEnabled(false);
                 boolean checked = Boolean.valueOf(newValue.toString());
-                if(checked == true){
-                    Log.i("checkbox","true");
-                }else{
-                    Log.i("checkbox","false");
-                }
+                install.put("not_recieve_noti",!checked);
+
+                install.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        pref.setEnabled(true);
+                    }
+                });
+
                 return true;
             }
         });

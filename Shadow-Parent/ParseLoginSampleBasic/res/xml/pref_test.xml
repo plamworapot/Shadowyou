@@ -30,12 +30,12 @@
         <!--android:negativeButtonText="@null"-->
         <!--android:positiveButtonText="@null" />-->
 
-    <Preference android:title="@string/pref_add_child">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.parse.loginsample.basic"
-            android:targetClass="com.parse.loginsample.basic.AddChildActivity" />
-    </Preference>
+    <!--<Preference android:title="@string/pref_add_child">-->
+        <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:targetPackage="com.shadowu.parent"-->
+            <!--android:targetClass="com.parse.loginsample.basic.AddChildActivity" />-->
+    <!--</Preference>-->
 
 
 </PreferenceScreen>

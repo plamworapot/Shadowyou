@@ -16,13 +16,18 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.parse.FindCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -40,6 +45,7 @@ public class MapsHistoryActivity extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     int j;
+    List<ParseObject> parseHistory = new ArrayList<ParseObject>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,26 +54,44 @@ public class MapsHistoryActivity extends FragmentActivity {
         long start = getIntent().getExtras().getLong("start");
         long stop = getIntent().getExtras().getLong("finish");
         String child_name = getIntent().getExtras().getString("child_name");
-        String deviceId = getIntent().getExtras().getString("deviceId");
+        final String device_getObjectId = getIntent().getExtras().getString("device_getObjectId");
         String start_date = MillsToDate(start);
         String stop_date = MillsToDate(stop);
         Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(start);
         Date start_obj_date = cal.getTime();
-        Log.i("start_date",""+start_obj_date);
-        Log.i("start_id",""+deviceId);
-
-        Log.i("starts",""+start);
-        Log.i("startf",""+stop);
+        cal.setTimeInMillis(stop);
+        Date stop_obj_date = cal.getTime();
+        Log.i("start_id",""+Globals.select_device.getObjectId());
+        Log.i("date_start",""+start_obj_date);
+        Log.i("date_stop",""+stop_obj_date);
         Log.i("start_child",child_name);
-        ArrayList<LatLng> line = new ArrayList<LatLng>();
-        line.add(new LatLng(13.639199, 100.524985));
-        line.add(new LatLng(13.638657, 100.526884));
-        line.add(new LatLng(13.640972, 100.525972));
-        line.add(new LatLng(13.641837, 100.528997));
-        line.add(new LatLng(13.639429, 100.525049));
-        Log.i("array_list",""+line.size());
-        DrawPolyline(line);
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("DeviceHistory");
+        query.whereLessThanOrEqualTo("createdAt",stop_obj_date);
+        query.whereGreaterThanOrEqualTo("createdAt",start_obj_date);
+        ParseObject device = Globals.select_device.getParseObject("device");
+        query.whereEqualTo("deviceId",device);
+        Log.i("global",""+Globals.select_device.getParseObject("device").getObjectId());
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> parseObjects, ParseException e) {
+                parseHistory = parseObjects;
+                DrawPolyline();
+                Log.i("size",""+parseObjects.size());
+
+            }
+        });
+
+
+//        line.add(new LatLng(13.639199, 100.524985));
+//        line.add(new LatLng(13.638657, 100.526884));
+//        line.add(new LatLng(13.640972, 100.525972));
+//        line.add(new LatLng(13.641837, 100.528997));
+//        line.add(new LatLng(13.639429, 100.525049));
+//        Log.i("array_list",""+line.size());
+//
+//
+
 
 
     }
@@ -78,13 +102,37 @@ public class MapsHistoryActivity extends FragmentActivity {
         return formatter.format(cal.getTime());
 
     }
-    public void DrawPolyline(ArrayList<LatLng> latlng){
-        for(int i=0;i<latlng.size()-1;i++){
+    public void DrawPolyline(){
+        ArrayList<LatLng> lines = new ArrayList<LatLng>();
+        ArrayList<Marker> markers =  new ArrayList<Marker>();
+        for(ParseObject row :parseHistory){
+            LatLng latlng = new LatLng(row.getParseGeoPoint("location").getLatitude(),row.getParseGeoPoint("location").getLongitude());
+            lines.add(latlng);
+            mMap.addMarker(new MarkerOptions()
+                .position(latlng)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.child))
+                .title("Had been here At")
+                .snippet(""+row.getCreatedAt())
+            );
+
+        }
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                marker.showInfoWindow();
+                return true;
+            }
+        });
+        for(int i=0;i<lines.size()-1;i++){
+            if(i==0){
+                CameraPosition start = new CameraPosition.Builder().target(lines.get(i)).zoom(18f).build();
+                mMap.moveCamera(CameraUpdateFactory.newCameraPosition(start));
+            }
             int temp = i+1;
             for(int j=temp;;){
 
                 mMap.addPolyline(new PolylineOptions()
-                        .add(latlng.get(i), latlng.get(j))
+                        .add(lines.get(i), lines.get(j))
                         .width(5)
                         .color(Color.RED));
 //                Log.i("line","i = "+i+",j = "+j+",latlng size = "+latlng.size());

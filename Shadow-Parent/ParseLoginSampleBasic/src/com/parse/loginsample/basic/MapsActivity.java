@@ -1,5 +1,6 @@
 package com.parse.loginsample.basic;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -7,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.media.Image;
 import android.provider.Settings;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -17,13 +19,16 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupMenu;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,11 +56,16 @@ import com.parse.ParseUser;
 
 
 import java.lang.reflect.Type;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
+
+import javax.xml.parsers.ParserConfigurationException;
 
 public class MapsActivity extends FragmentActivity  {
 
@@ -72,39 +82,33 @@ public class MapsActivity extends FragmentActivity  {
     int chk = 1;
     int selectchk =0;
     int i=0;
-    boolean first_load = true;
+    boolean firstload;
     Gson g = new Gson();
     DatePicker finish_date;
     DatePicker start_date;
     AlertDialog Date_dialog;
     int chk_t = 0;
     Button listview;
-    String select_deviceId = new String();
-
+    List<ParseObject> child_history = new ArrayList<ParseObject>();
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
+        firstload = true;
+        ImageButton btn_select  = (ImageButton)findViewById(R.id.imageButton_select);
+        ImageButton btn_delete  = (ImageButton)findViewById(R.id.imageButton_delete);
+        ImageButton btn_add     = (ImageButton)findViewById(R.id.imageButton_add);
+        ImageButton btn_child_management     = (ImageButton)findViewById(R.id.imageButton_child_management);
+        ImageButton btn_history = (ImageButton)findViewById(R.id.imageButton_history);
+        ImageButton btn_cancel = (ImageButton)findViewById(R.id.imageButton_cancel);
+        final TableRow main = (TableRow)findViewById(R.id.main_table);
+        final TableRow slave = (TableRow)findViewById(R.id.second_table);
 
-        Button btn_select = (Button)findViewById(R.id.button2);
-        Button btn_delete = (Button)findViewById(R.id.button3);
-        Button btn_add = (Button)findViewById(R.id.button_add);
-        Button btn_history = (Button)findViewById(R.id.button_history);
-        final Button btn_left = (Button)findViewById(R.id.button_left);
-        final Button btn_right = (Button)findViewById(R.id.button_right);
-//      Parse.enableLocalDatastore(this);
-//      Parse.initialize(this, "gBRDBgkOHQmO5AwTB0TsByWqCHaAmjuLfd25xQWJ", "0cVOTgzS7ZKXewFHuJz4nYb5GSkYayU37OSFrRcv"); //ayzrl
-        Parse.initialize(this, "BlDypkDXDLkGHQSor5PJBIY9y3LrI4U9F7W7Maxq", "fpyiTXf1PcFHofcGiDKOgHqc08RO2xiDdhCxxxgl"); //plam
+
+        final ImageButton btn_left = (ImageButton)findViewById(R.id.imageButton_left);
+        final ImageButton btn_right = (ImageButton)findViewById(R.id.imageButton_right);
         android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);
-
-        Type type = new TypeToken<List<String[]>>() {}.getType();
-//        ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-//        installation.put("deviceId", android_id);
-//        installation.saveInBackground();
-
-
-
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Area");
         query.whereEqualTo("user", ParseUser.getCurrentUser());
@@ -132,8 +136,25 @@ public class MapsActivity extends FragmentActivity  {
             @Override
             public void onClick(View v) {
                 chk = 0;
+                Toast.makeText(
+                        MapsActivity.this,
+                        "Area Mode",
+                        Toast.LENGTH_LONG
+                ).show();
             }
         });
+        btn_child_management.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),AddChildActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /* arrayPoints.clear();
+                            redraw();
+                            chk =1;*/
+
 
         //Click map and Add marker
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
@@ -166,6 +187,8 @@ public class MapsActivity extends FragmentActivity  {
                         markPosit = new ArrayList<LatLng>();
                         System.out.println(""+polyPosit);
                     }
+                }else{
+                    marker.showInfoWindow();
                 }
 
                 return true;
@@ -177,11 +200,17 @@ public class MapsActivity extends FragmentActivity  {
         btn_select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(
+                        MapsActivity.this,
+                        "Select Area Mode",
+                        Toast.LENGTH_LONG
+                ).show();
                 if(selectchk == 0){
                     selectchk =1;
                     polygonOptions = new PolygonOptions();
                     if(arealist.size() > 0){
-
+                        slave.setVisibility(View.VISIBLE);
+                        main.setVisibility(View.INVISIBLE);
                         btn_left.setVisibility(View.VISIBLE);
                         btn_right.setVisibility(View.VISIBLE);
                         i= arealist.size()-1;
@@ -211,6 +240,7 @@ public class MapsActivity extends FragmentActivity  {
                             }
                         });
                     }
+
                 }
 
             }
@@ -221,21 +251,72 @@ public class MapsActivity extends FragmentActivity  {
             @Override
             public void onClick(View v) {
                 if(selectchk == 1){
-                    if(arealist.size() > 0){
-                        arealist.remove(i);
-                        redraw();
-                        i= arealist.size()-1;
-                    }
-                    sendData();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
+                    Context context = MapsActivity.this;
+
+
+                    builder.setTitle("Delete?");
+                    builder.setMessage("Do you sure for delete this area? ");
+
+                    LinearLayout layout = new LinearLayout(context);
+                    layout.setOrientation(LinearLayout.VERTICAL);
+
+                    builder.setView(layout);
+                    builder.setPositiveButton("Save",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface arg0, int arg1) {
+                                    if(arealist.size() > 0){
+                                        arealist.remove(i);
+                                        redraw();
+                                        i= arealist.size()-1;
+                                    }
+                                    sendData();
+                                    slave.setVisibility(View.INVISIBLE);
+                                    main.setVisibility(View.VISIBLE);
+                                    btn_left.setVisibility(View.INVISIBLE);
+                                    btn_right.setVisibility(View.INVISIBLE);
+                                    selectchk =0;
+                                }
+                            });
+                    builder.setNegativeButton("Cancel",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface arg0, int arg1) {
+                                    // DO TASK
+
+                                }
+                            });
+
+
+                    final AlertDialog dialog = builder.create();
+                    dialog.show();
+
+
                 }
-                btn_left.setVisibility(View.INVISIBLE);
-                btn_right.setVisibility(View.INVISIBLE);
+
+            }
+        });
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(
+                        MapsActivity.this,
+                        "Cancel",
+                        Toast.LENGTH_LONG
+                ).show();
+                redraw();
                 selectchk =0;
+                slave.setVisibility(View.INVISIBLE);
+                main.setVisibility(View.VISIBLE);
             }
         });
         btn_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(
+                        MapsActivity.this,
+                        "History Mode",
+                        Toast.LENGTH_LONG
+                ).show();
                 final ArrayList<String> deviceId = new ArrayList<String>();
 
 
@@ -278,11 +359,11 @@ public class MapsActivity extends FragmentActivity  {
                                 @Override
                                 public void done(List<ParseObject> rows, ParseException e) {
                                     if (e == null && rows.size() > 0) {
-
+                                        child_history = rows;
+                                        int i =0;
                                         for (ParseObject row : rows) {
-                                            ChildList temp = new ChildList(row.getString("name"),row.getString("deviceId"));
-                                            popup.getMenu().add(temp.name.toString());
-                                            deviceId.add(row.getParseObject("deviceId").getObjectId());
+                                            popup.getMenu().add(0,i,i,row.getString("name").toString());
+                                            i++;
                                         }
                                         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                                             public boolean onMenuItemClick(MenuItem item) {
@@ -295,12 +376,14 @@ public class MapsActivity extends FragmentActivity  {
                                                     listview.setText("");
                                                 }else{
                                                     listview.setText(item.getTitle().toString());
-                                                    select_deviceId = deviceId.get((item.getItemId()));
+                                                    Log.i("item", "" + item.getItemId());
+                                                    Globals.select_device = child_history.get(item.getItemId());
                                                 }
                                                 Log.i("temp",listview.getText().toString());
                                                 return true;
                                             }
                                         });
+
                                         popup.show();
                                     }
                                 }
@@ -325,7 +408,7 @@ public class MapsActivity extends FragmentActivity  {
                                 intent.putExtra("start",c);
                                 intent.putExtra("finish",d);
                                 intent.putExtra("child_name",childname);
-                                intent.putExtra("deviceId",select_deviceId);
+
                                 startActivity(intent);
 
                             }
@@ -452,21 +535,26 @@ public class MapsActivity extends FragmentActivity  {
                             ParseObject device = row.getParseObject("device");
                             ParseGeoPoint child_latlng = device.getParseGeoPoint("location");
                             int battery = device.getInt("level");
-
+                            String child_name = row.getString("name");
                             Boolean plugged = device.getBoolean("plugged");
                             String charge = plugged == true ? "(Charging)" : "" ;
+                            Calendar calendar = new GregorianCalendar();
+//                            Log.i("timeago a",(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - 3600) +"");
+                            Log.i("timeago b",""+(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - (7*3600*1000)) );
+                            String last_update = TimeAgo.toDuration(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - (7*3600*1000) );
                             LatLng childlatlng = new LatLng(child_latlng.getLatitude(),child_latlng.getLongitude());
                             if(device_count == 1){
                                 panCamera(childlatlng);
                             }
                             Marker child = mMap.addMarker(new MarkerOptions()
-                                     .position(new LatLng(child_latlng.getLatitude(),child_latlng.getLongitude()))
-                                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.child))
-                                     .title("CHILD NAME")
-                                     .snippet("BATTERY :"+battery+" "+charge)
+                                    .position(new LatLng(child_latlng.getLatitude(),child_latlng.getLongitude()))
+                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.child))
+                                    .title(child_name+"  "+battery+"% "+charge+" ")
+                                    .snippet("Last Update :"+last_update)
+
                             );
-                            child.showInfoWindow();
-                            childlist.add(new ChildOption(battery,childlatlng,plugged));
+//                            child.showInfoWindow();
+                            childlist.add(new ChildOption(child_name,battery,childlatlng,plugged,last_update));
                         }
                     }
                 }
@@ -476,21 +564,25 @@ public class MapsActivity extends FragmentActivity  {
             for(ChildOption child :childlist){
                 String charge = child.plugged == true ? "(Charging)" : "" ;
 
-                mMap.addMarker(new MarkerOptions()
+                Marker childMarker =mMap.addMarker(new MarkerOptions()
                                 .position(child.childlatlng)
                                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.child))
-                                .title("CHILD NAME")
-                                .snippet("BATTERY :"+child.battery+" "+charge)
+                                .title(child.name + " " + child.battery + "% " + charge + " ")
+                                .snippet("Last Update :" +child.time)
                 );
+//                childMarker.showInfoWindow();
             }
         }
 
     }
+
+
     public void panCamera(LatLng latlng){
         CameraPosition now = new CameraPosition.Builder().target(latlng).zoom(14.5f).build();
-        if(first_load){
+        if(firstload){
+            Log.i("firstload","true");
             mMap.moveCamera(CameraUpdateFactory.newCameraPosition(now));
-            first_load = false;
+            firstload = false;
         }else{
             mMap.animateCamera(CameraUpdateFactory.newCameraPosition(now));
         }
@@ -623,13 +715,13 @@ public class MapsActivity extends FragmentActivity  {
         super.onResume();
         setUpMapIfNeeded();
         childlist.clear();
-        first_load = false;
+//        firstload  = false;
         redraw();
 
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 0, 0, "SETTING");
+        menu.add(0, 0, 0, "SETTING").setIcon(R.drawable.settings);
 
         MenuItem item = menu.getItem(0);
         item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS|MenuItem.SHOW_AS_ACTION_WITH_TEXT);
