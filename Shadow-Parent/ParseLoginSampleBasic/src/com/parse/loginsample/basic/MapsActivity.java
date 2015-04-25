@@ -77,6 +77,8 @@ public class MapsActivity extends FragmentActivity  {
     DatePicker finish_date;
     DatePicker start_date;
     AlertDialog Date_dialog;
+    int chk_t = 0;
+    Button listview;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -258,8 +260,9 @@ public class MapsActivity extends FragmentActivity  {
                 finish_date.setMaxDate(System.currentTimeMillis());
                 layout.addView(finish_date);
 
-                final Button listview = new Button(context);
-                listview.setText("Choose child to show");
+                listview = new Button(context);
+                listview.setHint("Choose child to show");
+                listview.setText(null);
                 layout.addView(listview);
                 listview.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -327,6 +330,7 @@ public class MapsActivity extends FragmentActivity  {
             public void onTextChanged(CharSequence s, int start, int before,
                                       int count) {
                 Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
+                chk_t =1;
             }
 
             @Override
@@ -357,13 +361,14 @@ public class MapsActivity extends FragmentActivity  {
 
         public void onDateChanged(DatePicker view, int year, int monthOfYear,
                                   int dayOfMonth) {
+
             long c = new GregorianCalendar(
                     start_date.getYear(),start_date.getMonth(),start_date.getDayOfMonth()
             ).getTimeInMillis();
             long d = new GregorianCalendar(
                     finish_date.getYear(),finish_date.getMonth(),finish_date.getDayOfMonth()
             ).getTimeInMillis();
-            if(d>=c){
+            if(d>=c && listview.getText().toString() != ""){
                 Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(true);
             }else{
                 Date_dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
@@ -371,6 +376,9 @@ public class MapsActivity extends FragmentActivity  {
 
         }
     };
+
+
+
 
     private void sendData() {
         Log.i("","senddata");
