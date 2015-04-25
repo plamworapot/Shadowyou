@@ -101,6 +101,7 @@ public class SampleApplication extends Application {
                 final boolean plugged = int_plugged==2?true:false;
                 Log.i("", "Battery Update " + level + " " + plugged);
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("Device");
+                query.whereLessThanOrEqualTo()
                 query.whereEqualTo("installation", ParseInstallation.getCurrentInstallation());
                 query.getFirstInBackground(new GetCallback<ParseObject>() {
                     public void done(ParseObject row, ParseException e) {
