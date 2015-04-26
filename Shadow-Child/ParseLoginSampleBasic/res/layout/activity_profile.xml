@@ -40,10 +40,10 @@
             android:layout_height="wrap_content"
             style="@style/ParseLoginUI.TextView" />
 
-        <Button
-            android:id="@+id/login_or_logout_button"
-            style="@style/ParseLoginUI.Button"
-            android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing"
-            android:text="@string/profile_logout_button_label"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewQR" />
+
     </LinearLayout>
 </LinearLayout>

@@ -26,6 +26,8 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Base64;
@@ -33,8 +35,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
 import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
@@ -58,8 +65,7 @@ public class SampleProfileActivity extends Activity {
   private TextView titleTextView;
   private TextView emailTextView;
   private TextView nameTextView;
-  private Button loginOrLogoutButton;
-
+  private ImageView qrView;
   private ParseUser currentUser;
 
   @Override
@@ -70,25 +76,9 @@ public class SampleProfileActivity extends Activity {
     titleTextView = (TextView) findViewById(R.id.profile_title);
     emailTextView = (TextView) findViewById(R.id.profile_email);
     nameTextView = (TextView) findViewById(R.id.profile_name);
-    loginOrLogoutButton = (Button) findViewById(R.id.login_or_logout_button);
     titleTextView.setText(R.string.profile_title_logged_in);
+    qrView = (ImageView)findViewById(R.id.imageViewQR);
 
-    loginOrLogoutButton.setOnClickListener(new OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        if (currentUser != null) {
-          // User clicked to log out.
-          ParseUser.logOut();
-          currentUser = null;
-          showProfileLoggedOut();
-        } else {
-          // User clicked to log in.
-          ParseLoginBuilder loginBuilder = new ParseLoginBuilder(
-              SampleProfileActivity.this);
-          startActivityForResult(loginBuilder.build(), LOGIN_REQUEST);
-        }
-      }
-    });
   }
 
   @Override
@@ -121,13 +111,22 @@ public class SampleProfileActivity extends Activity {
     nameTextView.setText("Loading...");
     ParseQuery<ParseObject> query = ParseQuery.getQuery("Device");
     query.whereEqualTo("installation", ParseInstallation.getCurrentInstallation());
+
     query.getFirstInBackground(new GetCallback<ParseObject>() {
         public void done(ParseObject row, ParseException e) {
             nameTextView.setText(row.getObjectId());
+            com.google.zxing.Writer writer = new QRCodeWriter();
+            try{
+                BitMatrix bm = writer.encode(row.getObjectId(), BarcodeFormat.QR_CODE, 150, 150);
+                Bitmap bitmap = toBitmap(bm);
+                if(bitmap != null) {
+                    qrView.setImageBitmap(bitmap);
+                }
+            }catch (WriterException error){
+            }
         }
     });
 
-    loginOrLogoutButton.setVisibility(View.INVISIBLE);
   }
 
   /**
@@ -137,6 +136,19 @@ public class SampleProfileActivity extends Activity {
     titleTextView.setText(R.string.profile_title_logged_out);
     emailTextView.setText("");
     nameTextView.setText("");
-    loginOrLogoutButton.setText(R.string.profile_login_button_label);
   }
+
+    public static Bitmap toBitmap(BitMatrix matrix){
+        int height = matrix.getHeight();
+        int width = matrix.getWidth();
+        Bitmap bmp = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
+        for (int x = 0; x < width; x++){
+            for (int y = 0; y < height; y++){
+                bmp.setPixel(x, y, matrix.get(x,y) ? Color.BLACK : Color.WHITE);
+            }
+        }
+        return bmp;
+    }
+
+
 }

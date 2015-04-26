@@ -26,51 +26,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f286f0ae-274e-42b2-88d9-9f1dcb4ab31a" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout-land\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\com_parse_ui_parse_login_fragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values-v11\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleDispatchActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout\activity_profile.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout-land\com_parse_ui_parse_login_fragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout-land\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\background.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\build.gradle" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values-v11\themes.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\strings.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout-land\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleProfileActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\background.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values-v11\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleProfileActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleDispatchActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values-v11\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleProfileActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values-v11\themes.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout-land\activity_profile.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout-land\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\com_parse_ui_parse_login_fragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values-v11\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" />
     </list>
     <ignored path="ParseUI-Android-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,20 +96,72 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="1781" max-vertical-offset="2312">
-              <caret line="111" column="59" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.21387284" vertical-offset="1881" max-vertical-offset="2227">
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
-                <element signature="e#1997#2015#0" expanded="true" />
-                <element signature="e#2152#2170#0" expanded="true" />
                 <element signature="e#2543#2561#0" expanded="true" />
                 <element signature="e#3424#3442#0" expanded="true" />
-                <element signature="e#3616#3638#0" expanded="true" />
-                <element signature="e#3735#3761#0" expanded="true" />
                 <element signature="e#3868#3893#0" expanded="true" />
-                <element signature="e#5328#5367#0" expanded="true" />
-                <element signature="e#5478#5503#0" expanded="true" />
-                <element signature="e#5593#5622#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleProfileActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.392857" vertical-offset="183" max-vertical-offset="1836">
+              <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+              <folding>
+                <element signature="e#2897#2929#0" expanded="true" />
+                <element signature="e#4783#4816#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_profile.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.888889" vertical-offset="463" max-vertical-offset="935">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_profile.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout-land/activity_profile.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.9259257" vertical-offset="459" max-vertical-offset="816">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginUI/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="663">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -588,6 +640,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseLoginSampleBasic" />
                 <option name="name" value="prepareDebugTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare me.dm7.barcodescanner:core:1.7" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseLoginSampleBasic" />
+                <option name="name" value="prepareMeDm7BarcodescannerCore17Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare me.dm7.barcodescanner:zxing:1.7" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseLoginSampleBasic" />
+                <option name="name" value="prepareMeDm7BarcodescannerZxing17Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare ParseAndroidUI:ParseLoginUI:unspecified" />
@@ -1107,7 +1169,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/Desktop/parse" value="4281270030000" />
-        <entry key="$PROJECT_DIR$" value="5720163192554" />
+        <entry key="$PROJECT_DIR$" value="5720199718782" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1370,6 +1432,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services/7.0.0/play-services-7.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.0.0/appcompat-v7-22.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.dm7.barcodescanner/zxing/1.7/e3a454a699eba280a83df1c42f0e47f053e0e3cb/zxing-1.7.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-ads/7.0.0/play-services-ads-7.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-analytics/7.0.0/play-services-analytics-7.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-appindexing/7.0.0/play-services-appindexing-7.0.0.aar" />
@@ -1389,6 +1452,8 @@
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-safetynet/7.0.0/play-services-safetynet-7.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-wallet/7.0.0/play-services-wallet-7.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-wearable/7.0.0/play-services-wearable-7.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.dm7.barcodescanner/core/1.7/d955d236b52225a2932890b8965df9cb3f254612/core-1.7.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar" />
                             <option value="$PROJECT_DIR$/ParseLoginUI/libs/Parse-1.9.1.jar" />
                             <option value="$PROJECT_DIR$/ParseLoginUI/libs/ParseFacebookUtilsV4-1.9.1.jar" />
@@ -1795,14 +1860,17 @@
         <option value="$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_third_party_section.xml" />
         <option value="$PROJECT_DIR$/Parent/build.gradle" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/debug/res/values/google_maps_api.xml" />
-        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_app_logo.xml" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/GPSTracker.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/MapsActivity.java" />
-        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/MapsActivity.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SampleApplication.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/parse/loginsample/basic/SampleProfileActivity.java" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/MapsActivity.java" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/layout-land/activity_profile.xml" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml" />
+        <option value="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" />
         <option value="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" />
       </list>
     </option>
@@ -1810,7 +1878,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1552" />
+    <option name="width" value="1548" />
     <option name="height" value="842" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -1839,6 +1907,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1849,7 +1918,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1871,104 +1940,6 @@
               <option name="myItemId" value="ParseLoginUI" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginUI" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_parse_ui_parse_signup_fragment.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginUI" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginUI" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_parse_ui_parse_login_help_fragment.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginUI" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com_parse_ui_parse_login_fragment.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginUI" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2000,6 +1971,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity_profile.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2028,31 +2003,9 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="child" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseLoginSampleBasic" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2072,7 +2025,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2287,7 +2239,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="842" extended-state="6" />
+    <frame x="-8" y="-8" width="1548" height="842" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2306,7 +2258,7 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4540146" sideWeight="0.8285908" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37265417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37231183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2341,14 +2293,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2516">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -2375,7 +2319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3757" max-vertical-offset="4199">
           <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2383,7 +2326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="2244">
           <caret line="103" column="44" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2404,7 +2346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3757" max-vertical-offset="4199">
           <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2431,7 +2372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2159">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2446,7 +2386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2159">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2461,7 +2400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2159">
           <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2476,7 +2414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="2057">
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2484,7 +2421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="561">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2496,13 +2432,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout-land/com_parse_ui_parse_login_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/drawable-xxhdpi/com_parse_ui_twitter_login_logo.png">
@@ -2511,43 +2447,43 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_help_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout-land/com_parse_ui_parse_login_help_fragment.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout-land/com_parse_ui_parse_login_help_fragment.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout-land/com_parse_ui_parse_signup_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_signup_fragment.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_signup_fragment.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/color/com_parse_ui_parse_login_help_button_label_selector.xml">
@@ -2565,13 +2501,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.7777777" vertical-offset="269" max-vertical-offset="578">
           <caret line="25" column="77" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="77" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/src/com/parse/ui/ParseLoginFragment.java">
@@ -2582,13 +2518,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_third_party_section.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39593908" vertical-offset="48" max-vertical-offset="442">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/src/com/parse/ui/ParseLoginConfig.java">
@@ -2643,36 +2579,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="646">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_signup_form.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_form.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_form.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_app_logo.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37304077" vertical-offset="0" max-vertical-offset="319">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -2681,67 +2613,22 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout-land/activity_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginUI/res/layout/com_parse_ui_parse_login_help_form.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_maps.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="187">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2749,35 +2636,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="16.701754" vertical-offset="1071" max-vertical-offset="3621">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginUI/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/MapsActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1190">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="663">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.888889" vertical-offset="463" max-vertical-offset="935">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout-land/activity_profile.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9259257" vertical-offset="459" max-vertical-offset="816">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.392857" vertical-offset="183" max-vertical-offset="1836">
+          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2897#2929#0" expanded="true" />
+            <element signature="e#4783#4816#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1781" max-vertical-offset="2312">
-          <caret line="111" column="59" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.21387284" vertical-offset="1881" max-vertical-offset="2227">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
-            <element signature="e#1997#2015#0" expanded="true" />
-            <element signature="e#2152#2170#0" expanded="true" />
             <element signature="e#2543#2561#0" expanded="true" />
             <element signature="e#3424#3442#0" expanded="true" />
-            <element signature="e#3616#3638#0" expanded="true" />
-            <element signature="e#3735#3761#0" expanded="true" />
             <element signature="e#3868#3893#0" expanded="true" />
-            <element signature="e#5328#5367#0" expanded="true" />
-            <element signature="e#5478#5503#0" expanded="true" />
-            <element signature="e#5593#5622#0" expanded="true" />
           </folding>
         </state>
       </provider>
