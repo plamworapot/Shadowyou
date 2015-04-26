@@ -1,6 +1,7 @@
 package com.parse.loginsample.basic;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v4.app.FragmentActivity;
@@ -45,10 +46,15 @@ public class AddChildActivity extends FragmentActivity {
     Gson g = new Gson();
     SimpleAdapter adapter;
     List<Map<String, String>> data;
+    ProgressDialog progress;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        context = this;
+        progress = ProgressDialog.show(this, "ShadowU",
+                "Loading data ...", true);
         setContentView(R.layout.activity_add_child);
         childlist = (ListView)findViewById(R.id.child_list);
         childlist.setVisibility(View.INVISIBLE);
@@ -86,6 +92,8 @@ public class AddChildActivity extends FragmentActivity {
                 adb.setNegativeButton("Cancel", null);
                 adb.setPositiveButton("Ok", new AlertDialog.OnClickListener() {
                     public void onClick(final DialogInterface dialog, int which) {
+                        progress = ProgressDialog.show(context, "ShadowU",
+                                "Deleting data ...", true);
                         ParseQuery<ParseObject> query = ParseQuery.getQuery("Parent_relation_child");
                         query.getInBackground(array_child_list.get(positionToRemove).object_id,new GetCallback<ParseObject>() {
                             @Override
@@ -99,7 +107,7 @@ public class AddChildActivity extends FragmentActivity {
                                 });
                             }
                         });
-
+                        progress.dismiss();
 
                     }});
                 adb.show();
@@ -128,10 +136,14 @@ public class AddChildActivity extends FragmentActivity {
                 }else{
                     childlist.setVisibility(View.INVISIBLE);
                 }
+                progress.dismiss();
             }
         });
+
     }
     public void savetoparse(){
+        progress = ProgressDialog.show(this, "ShadowU",
+                "Saving data ...", true);
         for(final ChildList item:array_child_list){
             if(item.object_id == null){
                 Log.i("","Save "+item.deviceId);
@@ -161,6 +173,7 @@ public class AddChildActivity extends FragmentActivity {
                                     Toast.LENGTH_LONG).show();
                             Log.i("","No deviceId has");
                         }
+                        progress.dismiss();
                     }
                 });
             }

@@ -30,7 +30,7 @@ public class TimeAgo {
             }
         }
         if("".equals(res.toString()))
-            return "0 second ago";
+            return "just now";
         else
             return res.toString();
     }

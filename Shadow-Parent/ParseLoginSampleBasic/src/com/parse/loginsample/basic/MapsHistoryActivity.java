@@ -52,9 +52,10 @@ public class MapsHistoryActivity extends FragmentActivity {
         setContentView(R.layout.maps_history);
         setUpMapIfNeeded();
         long start = getIntent().getExtras().getLong("start");
-        long stop = getIntent().getExtras().getLong("finish");
+        long stop = getIntent().getExtras().getLong("finish")+(60*60*24*1000);
         String child_name = getIntent().getExtras().getString("child_name");
         final String device_getObjectId = getIntent().getExtras().getString("device_getObjectId");
+
         String start_date = MillsToDate(start);
         String stop_date = MillsToDate(stop);
         Calendar cal = Calendar.getInstance();
@@ -62,16 +63,16 @@ public class MapsHistoryActivity extends FragmentActivity {
         Date start_obj_date = cal.getTime();
         cal.setTimeInMillis(stop);
         Date stop_obj_date = cal.getTime();
-        Log.i("start_id",""+Globals.select_device.getObjectId());
-        Log.i("date_start",""+start_obj_date);
-        Log.i("date_stop",""+stop_obj_date);
-        Log.i("start_child",child_name);
+//        Log.i("start_id",""+Globals.select_device.getObjectId());
+//        Log.i("date_start",""+start_obj_date);
+//        Log.i("date_stop",""+stop_obj_date);
+//        Log.i("start_child",child_name);
         ParseQuery<ParseObject> query = ParseQuery.getQuery("DeviceHistory");
         query.whereLessThanOrEqualTo("createdAt",stop_obj_date);
         query.whereGreaterThanOrEqualTo("createdAt",start_obj_date);
         ParseObject device = Globals.select_device.getParseObject("device");
-        query.whereEqualTo("deviceId",device);
-        Log.i("global",""+Globals.select_device.getParseObject("device").getObjectId());
+//        query.whereEqualTo("deviceId",device);
+//        Log.i("global",""+Globals.select_device.getParseObject("device").getObjectId());
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> parseObjects, ParseException e) {
@@ -105,13 +106,21 @@ public class MapsHistoryActivity extends FragmentActivity {
     public void DrawPolyline(){
         ArrayList<LatLng> lines = new ArrayList<LatLng>();
         ArrayList<Marker> markers =  new ArrayList<Marker>();
+        boolean first_load = true;
         for(ParseObject row :parseHistory){
+
             LatLng latlng = new LatLng(row.getParseGeoPoint("location").getLatitude(),row.getParseGeoPoint("location").getLongitude());
             lines.add(latlng);
+
+            if(first_load){
+                CameraPosition start = new CameraPosition.Builder().target(latlng).zoom(17f).build();
+                mMap.moveCamera(CameraUpdateFactory.newCameraPosition(start));
+                first_load=false;
+            }
             mMap.addMarker(new MarkerOptions()
                 .position(latlng)
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.child))
-                .title("Had been here At")
+                .title("Had been here")
                 .snippet(""+row.getCreatedAt())
             );
 
@@ -124,10 +133,7 @@ public class MapsHistoryActivity extends FragmentActivity {
             }
         });
         for(int i=0;i<lines.size()-1;i++){
-            if(i==0){
-                CameraPosition start = new CameraPosition.Builder().target(lines.get(i)).zoom(18f).build();
-                mMap.moveCamera(CameraUpdateFactory.newCameraPosition(start));
-            }
+
             int temp = i+1;
             for(int j=temp;;){
 

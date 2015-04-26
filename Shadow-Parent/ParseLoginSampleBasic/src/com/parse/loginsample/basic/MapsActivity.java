@@ -2,6 +2,7 @@ package com.parse.loginsample.basic;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -90,6 +91,8 @@ public class MapsActivity extends FragmentActivity  {
     int chk_t = 0;
     Button listview;
     List<ParseObject> child_history = new ArrayList<ParseObject>();
+    ProgressDialog progress;
+    ImageButton btn_add;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,14 +100,15 @@ public class MapsActivity extends FragmentActivity  {
         setUpMapIfNeeded();
         firstload = true;
         ImageButton btn_select  = (ImageButton)findViewById(R.id.imageButton_select);
+        btn_add     = (ImageButton)findViewById(R.id.imageButton_add);
         ImageButton btn_delete  = (ImageButton)findViewById(R.id.imageButton_delete);
-        ImageButton btn_add     = (ImageButton)findViewById(R.id.imageButton_add);
         ImageButton btn_child_management     = (ImageButton)findViewById(R.id.imageButton_child_management);
         ImageButton btn_history = (ImageButton)findViewById(R.id.imageButton_history);
         ImageButton btn_cancel = (ImageButton)findViewById(R.id.imageButton_cancel);
         final TableRow main = (TableRow)findViewById(R.id.main_table);
         final TableRow slave = (TableRow)findViewById(R.id.second_table);
-
+        progress = ProgressDialog.show(this, "ShadowU",
+                "Loading...", true);
 
         final ImageButton btn_left = (ImageButton)findViewById(R.id.imageButton_left);
         final ImageButton btn_right = (ImageButton)findViewById(R.id.imageButton_right);
@@ -135,14 +139,23 @@ public class MapsActivity extends FragmentActivity  {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chk = 0;
                 Toast.makeText(
                         MapsActivity.this,
                         "Area Mode",
                         Toast.LENGTH_LONG
                 ).show();
+                if(chk == 1){
+                    btn_add.setImageResource(R.drawable.xmark);
+                    chk = 0;
+                }else{
+                    btn_add.setImageResource(R.drawable.addarea);
+                    arrayPoints.clear();
+                    redraw();
+                    chk =1;
+                }
             }
         });
+
         btn_child_management.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -525,6 +538,7 @@ public class MapsActivity extends FragmentActivity  {
         if(childlist.size()==0){
             final ParseQuery<ParseObject> query = ParseQuery.getQuery("Parent_relation_child");
             query.include("device");
+            query.whereEqualTo("user", ParseUser.getCurrentUser());
             query.findInBackground(new FindCallback<ParseObject>() {
                 public void done(List<ParseObject> rows, ParseException e) {
                     // results has the list of users with a hometown team with a winning record
@@ -539,9 +553,11 @@ public class MapsActivity extends FragmentActivity  {
                             Boolean plugged = device.getBoolean("plugged");
                             String charge = plugged == true ? "(Charging)" : "" ;
                             Calendar calendar = new GregorianCalendar();
+
 //                            Log.i("timeago a",(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - 3600) +"");
-                            Log.i("timeago b",""+(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - (7*3600*1000)) );
-                            String last_update = TimeAgo.toDuration(calendar.getTimeInMillis() - row.getUpdatedAt().getTime() - (7*3600*1000) );
+                            Log.i("time_parse",device.getUpdatedAt().toString());
+                            Log.i("time_andriod", calendar.getTime().toString());
+                            String last_update = TimeAgo.toDuration(calendar.getTimeInMillis() - device.getUpdatedAt().getTime());
                             LatLng childlatlng = new LatLng(child_latlng.getLatitude(),child_latlng.getLongitude());
                             if(device_count == 1){
                                 panCamera(childlatlng);
@@ -607,8 +623,7 @@ public class MapsActivity extends FragmentActivity  {
             MarkerOptions mko = new MarkerOptions().position(area.getCentroid()).icon(BitmapDescriptorFactory.fromBitmap(icon));
             mMap.addMarker(mko);
         }
-
-
+        progress.dismiss();
     }
     private void selectArea(int i) {
         mMap.clear();
@@ -663,6 +678,7 @@ public class MapsActivity extends FragmentActivity  {
                             redraw();
                             sendData();
                             chk = 1;
+                            btn_add.setImageResource(R.drawable.addarea);
 
                         }
                     });
@@ -673,6 +689,7 @@ public class MapsActivity extends FragmentActivity  {
                             arrayPoints.clear();
                             redraw();
                             chk =1;
+                            btn_add.setImageResource(R.drawable.addarea);
                         }
                     });
 
@@ -721,7 +738,7 @@ public class MapsActivity extends FragmentActivity  {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 0, 0, "SETTING").setIcon(R.drawable.settings);
+        menu.add(0, 0, 0, "SETTING").setIcon(R.drawable.setting);
 
         MenuItem item = menu.getItem(0);
         item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS|MenuItem.SHOW_AS_ACTION_WITH_TEXT);

@@ -29,6 +29,7 @@
             android:id="@+id/imageButton_add"
             android:layout_gravity="center_horizontal|bottom"
             android:src="@drawable/addarea"
+            android:visibility="visible"
             />
 
         <ImageButton

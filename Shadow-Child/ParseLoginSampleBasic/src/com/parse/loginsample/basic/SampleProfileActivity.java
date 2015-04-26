@@ -35,7 +35,12 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
 import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.ui.ParseLoginBuilder;
 
@@ -90,7 +95,7 @@ public class SampleProfileActivity extends Activity {
   protected void onStart() {
     super.onStart();
     currentUser = ParseUser.getCurrentUser();
-    if (currentUser != null) {
+//    if (currentUser != null) {
 //        String android_id = Settings.Secure.getString(this.getContentResolver(),
 //                Settings.Secure.ANDROID_ID);
 //
@@ -101,9 +106,9 @@ public class SampleProfileActivity extends Activity {
 //        startActivity(intent);
 //        finish();
         showProfileLoggedIn();
-    } else {
-        showProfileLoggedOut();
-    }
+//    } else {
+//        showProfileLoggedOut();
+//    }
   }
 
 
@@ -111,13 +116,18 @@ public class SampleProfileActivity extends Activity {
    * Shows the profile of the given user.
    */
   private void showProfileLoggedIn() {
-    titleTextView.setText(R.string.profile_title_logged_in);
-    emailTextView.setText(currentUser.getEmail());
-    String fullName = currentUser.getString("name");
-    if (fullName != null) {
-      nameTextView.setText(fullName);
-    }
-    loginOrLogoutButton.setText(R.string.profile_logout_button_label);
+    titleTextView.setText("Your deviceId");
+    emailTextView.setText("");
+    nameTextView.setText("Loading...");
+    ParseQuery<ParseObject> query = ParseQuery.getQuery("Device");
+    query.whereEqualTo("installation", ParseInstallation.getCurrentInstallation());
+    query.getFirstInBackground(new GetCallback<ParseObject>() {
+        public void done(ParseObject row, ParseException e) {
+            nameTextView.setText(row.getObjectId());
+        }
+    });
+
+    loginOrLogoutButton.setVisibility(View.INVISIBLE);
   }
 
   /**
