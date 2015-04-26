@@ -142,7 +142,7 @@ public class MapsActivity extends FragmentActivity  {
                 Toast.makeText(
                         MapsActivity.this,
                         "Area Mode",
-                        Toast.LENGTH_LONG
+                        Toast.LENGTH_SHORT
                 ).show();
                 if(chk == 1){
                     btn_add.setImageResource(R.drawable.xmark);
@@ -217,7 +217,7 @@ public class MapsActivity extends FragmentActivity  {
                 Toast.makeText(
                         MapsActivity.this,
                         "Select Area Mode",
-                        Toast.LENGTH_LONG
+                        Toast.LENGTH_SHORT
                 ).show();
                 if(selectchk == 0){
                     selectchk =1;
@@ -315,7 +315,7 @@ public class MapsActivity extends FragmentActivity  {
                 Toast.makeText(
                         MapsActivity.this,
                         "Cancel",
-                        Toast.LENGTH_LONG
+                        Toast.LENGTH_SHORT
                 ).show();
                 redraw();
                 selectchk =0;
@@ -329,7 +329,7 @@ public class MapsActivity extends FragmentActivity  {
                 Toast.makeText(
                         MapsActivity.this,
                         "History Mode",
-                        Toast.LENGTH_LONG
+                        Toast.LENGTH_SHORT
                 ).show();
                 final ArrayList<String> deviceId = new ArrayList<String>();
 
@@ -384,7 +384,7 @@ public class MapsActivity extends FragmentActivity  {
                                                 Toast.makeText(
                                                         MapsActivity.this,
                                                         "You Clicked : " + item.getTitle(),
-                                                        Toast.LENGTH_LONG
+                                                        Toast.LENGTH_SHORT
                                                 ).show();
                                                 if(item.getTitle() == "Please select child"){
                                                     listview.setText("");
