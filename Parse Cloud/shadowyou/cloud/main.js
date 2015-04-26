@@ -9,6 +9,17 @@ Parse.Cloud.define("Logger", function(request, response) {
   // console.log(request.params);
   // response.success();
 });
+Parse.Cloud.beforeSave("_Installation", function(request, response) {
+  if (request.object.get("subscribe")== undefined) {
+    request.object.set("subscribe", true);
+    alert("SET DEFALUT");
+  }
+  response.success();
+});
+
+
+
+
 Parse.Cloud.beforeSave("Parent_relation_child", function(request, response) {
   var device = request.object.get('device');
   var parent_user = request.object.get('user');
@@ -39,10 +50,9 @@ Parse.Cloud.afterSave("Parent_relation_child", function(request, response) {
   var DeviceQuery = new Parse.Query(DeviceObj);
   DeviceQuery.equalTo("objectId",device.id);
   DeviceQuery.find({
-    success: function(reuslts) {
-      console.log(reuslts);
-      if(reuslts.length > 0){
-        reuslt = reuslts[0];
+    success: function(results) {
+      if(results.length > 0){
+        reuslt = results[0];
         // alert("Update");
         var temp_array = reuslt.get('arrayParent');
         if(temp_array){
@@ -78,9 +88,9 @@ Parse.Cloud.afterDelete("Parent_relation_child", function(request) {
   var query = new Parse.Query(locationObj);
   query.equalTo("objectId", device.id);
   query.find({
-    success: function(reuslts) {
-      if(reuslts.length > 0){
-        reuslt = reuslts[0];
+    success: function(results) {
+      if(results.length > 0){
+        reuslt = results[0];
         // alert("Delete");
         // DELETE ยังไม่ได้อัพเดท
           var temp_array = reuslt.get('arrayParent');
@@ -114,9 +124,24 @@ Parse.Cloud.beforeSave("Device", function(request, response) {
   var pushData = [];
 
   DeviceQuery.include("arrayParent");
+  // DeviceQuery.find().then(function(results) {
+  //   if(results.length > 1){
+  //     console.log("DELETE");
+  //     for (var i = 1; i < results.length; i++) {
+  //       console.log(results[i].id);
+  //       results[i].destroy({});
+  //     };
+  //   }
+  // });
+
   DeviceQuery.equalTo("objectId",deviceId);
   DeviceQuery.find().then(function(results) {
-    if(results.length > 0){
+
+
+
+    if(results.length == 1 && results[0].id == deviceId){
+      console.log(results[0].id);
+      console.log(deviceId);
       // alert("length "+results.length);
       var lastLocation = {
         latitude:results[0].get('location').latitude,
@@ -144,10 +169,10 @@ Parse.Cloud.beforeSave("Device", function(request, response) {
                     var label = area[i].label;
                     var push_type = "";
                     if(inside(lastLocation,check_area) == true && inside(currentLocation,check_area) == false){
-                      pushMsg = 'ออกข้างนอก '+label; 
+                      pushMsg = 'tracked person have left the '+label; 
                       push_type = "goout";           
                     }else if(inside(lastLocation,check_area) == false && inside(currentLocation,check_area) == true){
-                      pushMsg = 'เข้าข้างใน '+label;             
+                      pushMsg = 'tracked person have enter the '+label;             
                       push_type = "goin";           
                     }else if(inside(lastLocation,check_area) == false && inside(currentLocation,check_area) == false){
                       pushMsg = "อยู่ข้างนอก "+label;  
@@ -174,8 +199,7 @@ Parse.Cloud.beforeSave("Device", function(request, response) {
       // Return a new promise that is resolved when all of the deletes are finished.
       return Parse.Promise.when(promises);
     }else{
-      // response.success();
-      // return;
+      // response.error();
     }
   }).then(function() {
     var promises = [];
@@ -184,6 +208,7 @@ Parse.Cloud.beforeSave("Device", function(request, response) {
       if(pushItem.push_type == "goout" || pushItem.push_type == "goin" ){
         var pushquery = new Parse.Query(Parse.Installation);
         pushquery.equalTo("user",pushItem.push_user);
+        pushquery.equalTo("subscribe",true);
         promises.push(
           Parse.Push.send({
             where: pushquery, // Set our Installation query
@@ -220,14 +245,13 @@ Parse.Cloud.afterSave("Device", function(request, response) {
   DeviceHistoryQuery.descending("createdAt");
   DeviceHistoryQuery.limit(1);
   DeviceHistoryQuery.find({
-    success: function(reuslts) {
-      alert(reuslts.length+" history");
-      if(reuslts.length > 0){
-        if(getDistance(location,reuslts[0].get('location')) >= 50){
+    success: function(results) {
+      // alert(results.length+" history");
+      if(results.length > 0){
+        if(getDistance(location,results[0].get('location')) >= 50){
           var obj = new DeviceHistoryObj();
           obj.set('deviceId',request.object);
           obj.set('location',location);
-          obj.set('level',level);
           obj.set('pluged',pluged);
           obj.save();
         }
@@ -235,7 +259,6 @@ Parse.Cloud.afterSave("Device", function(request, response) {
         var obj = new DeviceHistoryObj();
         obj.set('deviceId',request.object);
         obj.set('location',location);
-        obj.set('level',level);
         obj.set('pluged',pluged);
         obj.save();
        }

@@ -26,51 +26,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f286f0ae-274e-42b2-88d9-9f1dcb4ab31a" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout-land\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout-land\com_parse_ui_parse_login_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleProfileActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleProfileActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\com_parse_ui_parse_login_fragment.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout-land\activity_profile.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values-v11\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values-v11\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleDispatchActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout-land\com_parse_ui_parse_login_fragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout-land\activity_profile.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\src\com\parse\loginsample\codecustomization\SampleApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values-v11\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\themes.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout-land\activity_profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\background.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values-v11\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\themes.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\background.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values-v11\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\layout\com_parse_ui_parse_login_fragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleCodeCustomization\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\res\layout-land\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\src\com\parse\loginsample\withdispatchactivity\SampleDispatchActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\res\values\styles.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleLayoutOverride\src\com\parse\loginsample\layoutoverride\SampleProfileActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\project\Shadow-Parent\ParseLoginSampleWithDispatchActivity\AndroidManifest.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/GPSTracker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" afterPath="$PROJECT_DIR$/ParseLoginSampleBasic/build.gradle" />
     </list>
     <ignored path="ParseUI-Android-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,19 +96,9 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2227">
               <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-              <folding>
-                <element signature="e#1997#2015#0" expanded="true" />
-                <element signature="e#2152#2170#0" expanded="true" />
-                <element signature="e#2543#2561#0" expanded="true" />
-                <element signature="e#3424#3442#0" expanded="true" />
-                <element signature="e#3616#3638#0" expanded="true" />
-                <element signature="e#3735#3761#0" expanded="true" />
-                <element signature="e#3868#3893#0" expanded="true" />
-                <element signature="e#5328#5367#0" expanded="true" />
-                <element signature="e#5478#5503#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +106,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginUI/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -126,12 +116,9 @@
       <file leaf-file-name="SampleProfileActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.035714" vertical-offset="1095" max-vertical-offset="1938">
-              <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-              <folding>
-                <element signature="e#4063#4780#0" expanded="true" />
-                <element signature="e#4773#4774#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="2788">
+              <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,8 +126,8 @@
       <file leaf-file-name="activity_profile.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="935">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="935">
+              <caret line="44" column="46" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -152,7 +139,7 @@
       <file leaf-file-name="SampleApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="1343">
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2227">
               <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
@@ -1934,7 +1921,16 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParseUI-Android-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2055,16 +2051,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseUI-Android-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2075,8 +2062,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4df106c476949fb5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="E6OKBC024991" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_19" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="android.project.structure.last.selected" value="Parent" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -2100,13 +2087,52 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.ParseLoginSampleBasic">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -2130,12 +2156,13 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -2177,49 +2204,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="ParseLoginSampleBasic" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2282,37 +2266,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884902" sideWeight="0.17140922" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4531516" sideWeight="0.8285908" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884902" sideWeight="0.17140922" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3721634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4531516" sideWeight="0.8285908" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3721634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2730,35 +2714,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="e#1997#2015#0" expanded="true" />
-            <element signature="e#2152#2170#0" expanded="true" />
-            <element signature="e#2543#2561#0" expanded="true" />
-            <element signature="e#3424#3442#0" expanded="true" />
-            <element signature="e#3616#3638#0" expanded="true" />
-            <element signature="e#3735#3761#0" expanded="true" />
-            <element signature="e#3868#3893#0" expanded="true" />
-            <element signature="e#5328#5367#0" expanded="true" />
-            <element signature="e#5478#5503#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/src/com/shadowu/child/SampleProfileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.035714" vertical-offset="1095" max-vertical-offset="1938">
-          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-          <folding>
-            <element signature="e#4063#4780#0" expanded="true" />
-            <element signature="e#4773#4774#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="2788">
+          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseLoginSampleBasic/res/layout/activity_profile.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="935">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="935">
+          <caret line="44" column="46" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="46" />
           <folding />
         </state>
       </provider>

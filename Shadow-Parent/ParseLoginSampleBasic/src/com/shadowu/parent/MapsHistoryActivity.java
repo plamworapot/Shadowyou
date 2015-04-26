@@ -71,7 +71,7 @@ public class MapsHistoryActivity extends FragmentActivity {
         query.whereLessThanOrEqualTo("createdAt",stop_obj_date);
         query.whereGreaterThanOrEqualTo("createdAt",start_obj_date);
         ParseObject device = Globals.select_device.getParseObject("device");
-//        query.whereEqualTo("deviceId",device);
+        query.whereEqualTo("deviceId",device);
 //        Log.i("global",""+Globals.select_device.getParseObject("device").getObjectId());
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
