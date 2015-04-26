@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -188,8 +189,11 @@ public class AddChildActivity extends FragmentActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_add_child, menu);
+
         MenuItem item = menu.findItem(R.id.action_add_child);
+        MenuItem qr_item = menu.findItem(R.id.action_add_qr);
         item.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        qr_item.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
         return true;
     }
 
@@ -274,6 +278,9 @@ public class AddChildActivity extends FragmentActivity {
 
                 }
             });
+        }else if(id == R.id.action_add_qr){
+            Intent intent = new Intent(getApplicationContext(),QRReader.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

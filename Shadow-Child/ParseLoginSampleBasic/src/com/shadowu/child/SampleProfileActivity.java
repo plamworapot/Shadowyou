@@ -114,15 +114,19 @@ public class SampleProfileActivity extends Activity {
 
     query.getFirstInBackground(new GetCallback<ParseObject>() {
         public void done(ParseObject row, ParseException e) {
-            nameTextView.setText(row.getObjectId());
-            com.google.zxing.Writer writer = new QRCodeWriter();
-            try{
-                BitMatrix bm = writer.encode(row.getObjectId(), BarcodeFormat.QR_CODE, 150, 150);
-                Bitmap bitmap = toBitmap(bm);
-                if(bitmap != null) {
-                    qrView.setImageBitmap(bitmap);
+            if(row != null){
+                nameTextView.setText(row.getObjectId());
+                com.google.zxing.Writer writer = new QRCodeWriter();
+                try{
+                    BitMatrix bm = writer.encode(row.getObjectId()+"", BarcodeFormat.QR_CODE, 300, 300);
+                    Bitmap bitmap = toBitmap(bm);
+                    if(bitmap != null) {
+                        qrView.setImageBitmap(bitmap);
+                    }
+                }catch (WriterException error){
                 }
-            }catch (WriterException error){
+            }else{
+                nameTextView.setText("Plase restart app");
             }
         }
     });

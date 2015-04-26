@@ -25,4 +25,5 @@
     <string name="history">History</string>
     <string name="notification_status">Receive Notification</string>
     <string name="title_activity_ttttttttttttttttttttttt">Map</string>
+    <string name="add_qr">QR code</string>
 </resources>
