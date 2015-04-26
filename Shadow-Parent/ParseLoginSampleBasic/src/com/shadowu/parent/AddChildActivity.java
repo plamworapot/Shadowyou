@@ -179,6 +179,12 @@ public class AddChildActivity extends FragmentActivity {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        loadchild();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_add_child, menu);
@@ -199,7 +205,6 @@ public class AddChildActivity extends FragmentActivity {
             Log.i("","Hello im in");
             AlertDialog.Builder builder = new AlertDialog.Builder(AddChildActivity.this);
             Context context = AddChildActivity.this;
-
             builder.setTitle("Add Child");
             builder.setMessage("Insert Child Name and Child Device ID");
 

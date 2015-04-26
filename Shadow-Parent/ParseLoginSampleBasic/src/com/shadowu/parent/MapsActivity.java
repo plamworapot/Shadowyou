@@ -159,7 +159,8 @@ public class MapsActivity extends FragmentActivity  {
         btn_child_management.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),AddChildActivity.class);
+//                Intent intent = new Intent(getApplicationContext(),AddChildActivity.class);
+                Intent intent = new Intent(getApplicationContext(),QRReader.class);
                 startActivity(intent);
             }
         });
