@@ -1,4 +1,4 @@
-package com.parse.loginsample.basic;
+package com.shadowu.parent;
 
 /**
  * Created by Ayzrl Skinwalker on 21/4/2558.

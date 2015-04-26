@@ -19,7 +19,7 @@
  *
  */
 
-package com.parse.loginsample.basic;
+package com.shadowu.parent;
 
 import android.app.Application;
 import android.content.BroadcastReceiver;

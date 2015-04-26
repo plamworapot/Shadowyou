@@ -1,4 +1,4 @@
-package com.parse.loginsample.basic;
+package com.shadowu.parent;
 
 import android.webkit.GeolocationPermissions;
 

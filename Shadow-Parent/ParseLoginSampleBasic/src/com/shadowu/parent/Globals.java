@@ -1,4 +1,4 @@
-package com.parse.loginsample.basic;
+package com.shadowu.parent;
 
 import com.parse.ParseObject;
 
